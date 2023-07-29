@@ -7,7 +7,7 @@
 void rev_string(char *s)
 {
 	char nonto;
-	int n, kati, sibisi;
+	int i, kati, sibisi;
 
 	kati = 0;
 	sibisi = 0;
@@ -19,9 +19,9 @@ void rev_string(char *s)
 
 	sibisi = kati - 1;
 
-	for (n = 0; n < kati / 2; n++)	
+	for (i = 0; i < kati / 2; i++)	
 	{
-		nonto = s[n];
+		nonto = s[i];
 		s[i] = s[sibisi];
 		s[sibisi--] = nonto;
 	}
