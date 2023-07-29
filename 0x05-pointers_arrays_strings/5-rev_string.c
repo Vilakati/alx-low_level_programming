@@ -4,26 +4,24 @@
  * rev_string -  a function that reverses a string
  * @s: reversed string
  */
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	char nonto;
-	int n, kati, sibisi;
+	int i, j, len;
 
-	kati = 0;
-	sibisi = 0;
+	i = 0;
 
-	while (s[kati] != '\0')
+	while (s[i] != '\0')
 	{
-		kati++;
+		i++;
 	}
 
-	sibisi = kati - 1;
+	len = i;
 
-	for (n = 0; n < kati / 2; n++)
+	for (j = len - 1; j >= 0; j--)
 	{
-		nonto = s[n];
-		s[i] = s[sibisi];
-		s[sibisi--] = nonto;
+		_putchar(s[j]);
 	}
+
+	_putchar('\n');
 }
 
