@@ -19,7 +19,7 @@ void rev_string(char *s)
 
 	sibisi = kati - 1;
 
-	for (i = 0; i < kati / 2; i++)	
+	for (i = 0; i < kati / 2; i++)
 	{
 		nonto = s[i];
 		s[i] = s[sibisi];
